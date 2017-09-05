@@ -29,9 +29,15 @@ public class testappium implements Runnable {
 		dc.setCapability("testName", testName);
 		dc.setCapability("user", "eyal");
 		dc.setCapability("password", "Admin1234");
+		
+		
 		dc.setCapability("deviceQuery", deviceQuery);
+		dc.setCapability("stream", "EyalReporter");
+		dc.setCapability("build", 1);
+		
 		//  dc.setCapability("projectName", "Default");
 		//  dc.setCapability(MobileCapabilityType.UDID, "bb5f832e3ee56f952af3f8ae1983b4de9e4b0951");
+		
 		dc.setCapability(MobileCapabilityType.APP, "http://192.168.2.72:8181/AndroidApps/eribank.apk");
 		dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
 		dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
