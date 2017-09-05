@@ -1,3 +1,3 @@
 git add .
-git commit -m "fdfFdf"
+git commit -m "commit with ant build"
 git push

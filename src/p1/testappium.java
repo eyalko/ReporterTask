@@ -1,4 +1,5 @@
-//package <set your test package>;
+package p1;
+
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -40,7 +41,7 @@ public class testappium implements Runnable {
 	}
 
 	@Test
-	public void testUntitled() {
+	public void testAppium() {
 		driver.context("NATIVE_APP");
 		driver.findElement(By.id("usernameTextField")).sendKeys("company");
 		driver.findElement(By.id("passwordTextField")).sendKeys("company");
@@ -60,7 +61,7 @@ public class testappium implements Runnable {
 		// TODO Auto-generated method stub
 		try {
 			setUp();
-			testUntitled();
+			testAppium();
 		} catch (Exception e) {
 			System.out.println("Test Failed");
 			e.printStackTrace();

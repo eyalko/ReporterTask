@@ -1,4 +1,5 @@
-//package <set your test package>;
+package p1;
+
 import com.experitest.client.*;
 import org.junit.*;
 /**

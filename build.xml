@@ -1,0 +1,45 @@
+<project name="Project" default="Parallel exec">
+    <!-- - - - - - - - - - - - - - - - - - target: compile - - - - - - - - -
+        - - - - - - - - -->
+    <target name="compile">
+        <delete dir="classes" failonerror="false">
+        </delete>
+        <mkdir dir="classes" />
+        <path id="lib.path.ref">
+            <fileset dir="lib" includes="*.jar" />
+        </path>
+        <javac srcdir="src" destdir="classes" classpathref="lib.path.ref">
+        </javac>
+        <copy todir="classes">
+            <fileset dir="src" excludes="**/*.java" />
+        </copy>
+    </target>
+    <path id="parallel.classpath">
+        <pathelement location="classes" />
+        <fileset dir="lib">
+            <include name="**/*.jar" />
+        </fileset>
+    </path>
+    <target name="Test01">
+    	<junit fork="true" printsummary="withOutAndErr" showoutput="true">
+            <formatter type="xml" usefile="true" />
+            <classpath refid="parallel.classpath" />
+            <test name="p1.testappium" />
+        </junit>
+    </target>
+    <target name="Test02">
+    	<junit fork="true" printsummary="withOutAndErr" showoutput="true">
+            <formatter type="xml" usefile="true" />
+            <classpath refid="parallel.classpath" />
+            <test name="p1.testappium" />
+        </junit>
+    </target>
+    <target name="Parallel exec" depends="compile">
+        <parallel>
+            <antcall target="Test01">
+            </antcall>
+            <antcall target="Test02">
+            </antcall>
+        </parallel>
+    </target>
+</project>
