@@ -34,12 +34,21 @@
             <test name="p1.testappium" />
         </junit>
     </target>
+	<target name="Test03">
+	    	<junit fork="true" printsummary="withOutAndErr" showoutput="true">
+	            <formatter type="xml" usefile="true" />
+	            <classpath refid="parallel.classpath" />
+	            <test name="p1.testappium" />
+	        </junit>
+	    </target>
     <target name="Parallel exec" depends="compile">
         <parallel>
             <antcall target="Test01">
             </antcall>
             <antcall target="Test02">
             </antcall>
+        	<antcall target="Test03">
+        	 </antcall>
         </parallel>
     </target>
 </project>
