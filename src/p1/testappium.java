@@ -15,7 +15,7 @@ import java.net.MalformedURLException;
 public class testappium implements Runnable {
 	private String reportDirectory = "reports";
 	private String reportFormat = "xml";
-	private String testName = "Test Login EriBank";
+	private String testName = "Reporter Login EriBank";
 	protected AndroidDriver<AndroidElement> driver = null;
 
 	private String deviceQuery = "@os='android'";
