@@ -31,14 +31,14 @@
     	<junit fork="true" printsummary="withOutAndErr" showoutput="true">
             <formatter type="xml" usefile="true" />
             <classpath refid="parallel.classpath" />
-            <test name="p1.testappium" />
+            <test name="p2.testappium" />
         </junit>
     </target>
 	<target name="Test03">
 	    	<junit fork="true" printsummary="withOutAndErr" showoutput="true">
 	            <formatter type="xml" usefile="true" />
 	            <classpath refid="parallel.classpath" />
-	            <test name="p1.testappium" />
+	            <test name="p3.testappium" />
 	        </junit>
 	    </target>
     <target name="Parallel exec" depends="compile">
