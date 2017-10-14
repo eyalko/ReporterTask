@@ -33,7 +33,7 @@ public class testappium implements Runnable {
 		
 		dc.setCapability("deviceQuery", deviceQuery);
 		dc.setCapability("stream", "Eyal Jenkins task");
-		dc.setCapability("build", 1);
+		dc.setCapability("build", 6);
 		
 		//  dc.setCapability("projectName", "Default");
 		//  dc.setCapability(MobileCapabilityType.UDID, "bb5f832e3ee56f952af3f8ae1983b4de9e4b0951");
