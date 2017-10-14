@@ -16,7 +16,7 @@ public class test {
     private String deviceQuery = "@os='android'";
     
 
-    @Before
+//    @Before
     public void setUp(){
         // In case your user is assign to a single project you can provide an empty string, 
         // otherwise please specify the project name
@@ -26,7 +26,7 @@ public class test {
         client.setReporter("xml", "reports", "testLogin");
     }
 
-    @Test
+//    @Test
     public void testchrome(){
         // This command "setDevice" is not applicable for GRID execution 
     	if(client.install("cloud:com.experitest.ExperiBank/.LoginActivity", true, false)){
@@ -38,7 +38,7 @@ public class test {
         client.click("NATIVE", "xpath=//*[@id='loginButton']", 0, 1);
     }
 
-    @After
+//    @After
     public void tearDown(){
         // Generates a report of the test case.
         // For more information - https://docs.experitest.com/display/public/SA/Report+Of+Executed+Test
