@@ -61,7 +61,7 @@ public class testappium implements Runnable {
 		driver.quit();
 	}
 
-	@Override
+//	@Override
 	public void run() {
 		// TODO Auto-generated method stub
 		// TODO Auto-generated method stub
