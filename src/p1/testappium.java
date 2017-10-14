@@ -38,7 +38,7 @@ public class testappium implements Runnable {
 		//  dc.setCapability("projectName", "Default");
 		//  dc.setCapability(MobileCapabilityType.UDID, "bb5f832e3ee56f952af3f8ae1983b4de9e4b0951");
 		
-		dc.setCapability(MobileCapabilityType.APP, "/ReporterTask2/com.experitest.ExperiBank-.LoginActivity_ver_1.0.1.apk");
+//		dc.setCapability(MobileCapabilityType.APP, "/ReporterTask2/com.experitest.ExperiBank-.LoginActivity_ver_1.0.1.apk");
 		dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
 		dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
 		dc.setCapability("instrumentApp", true);
