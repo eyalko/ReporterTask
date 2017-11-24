@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="EYALKOPEL-LT" name="p1.testappium" skipped="0" tests="1" time="145.808" timestamp="2017-11-10T07:24:48">
+<testsuite errors="0" failures="0" hostname="EYALKOPEL-LT" name="p1.AppiumGridIOS" skipped="0" tests="1" time="105.969" timestamp="2017-11-10T07:24:49">
   <properties>
-    <property name="ant.project.invoked-targets" value="Test01" />
+    <property name="ant.project.invoked-targets" value="Test05" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin" />
     <property name="java.vm.version" value="25.131-b11" />
@@ -51,7 +51,7 @@
     <property name="ant.file.type.Project" value="file" />
     <property name="java.vm.specification.version" value="1.8" />
     <property name="sun.arch.data.model" value="64" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner p1.testappium skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\eyal.kopelevich\workspace2\ReporterTask2\TEST-p1.testappium.xml crashfile=C:\Users\eyal.kopelevich\workspace2\ReporterTask2\junitvmwatcher3390868158368030816.properties propsfile=C:\Users\eyal.kopelevich\workspace2\ReporterTask2\junit667660834940040791.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner p1.AppiumGridIOS skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\eyal.kopelevich\workspace2\ReporterTask2\TEST-p1.AppiumGridIOS.xml crashfile=C:\Users\eyal.kopelevich\workspace2\ReporterTask2\junitvmwatcher2136682358507074467.properties propsfile=C:\Users\eyal.kopelevich\workspace2\ReporterTask2\junit5577964542273734495.properties" />
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre" />
     <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="user.language" value="en" />
@@ -68,39 +68,79 @@
     <property name="sun.desktop" value="windows" />
     <property name="sun.cpu.isalist" value="amd64" />
   </properties>
-  <testcase classname="p1.testappium" name="testAppium" time="145.073" />
+  <testcase classname="p1.AppiumGridIOS" name="testIOS" time="105.329" />
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Nov 10, 2017 9:26:57 AM org.openqa.selenium.remote.RemoteWebDriver log
-INFO: Executing: switchToContext [CLOUD-SID:2017-11-10_09-24-55-cda77cc4-24d5-4df4-a482-bf443ad0192c, switchToContext {name=NATIVE_APP}]
-Nov 10, 2017 9:26:58 AM org.openqa.selenium.remote.RemoteWebDriver log
-INFO: Executed: [CLOUD-SID:2017-11-10_09-24-55-cda77cc4-24d5-4df4-a482-bf443ad0192c, switchToContext {name=NATIVE_APP}]
-Nov 10, 2017 9:26:58 AM org.openqa.selenium.remote.RemoteWebDriver log
-INFO: Executing: findElement [CLOUD-SID:2017-11-10_09-24-55-cda77cc4-24d5-4df4-a482-bf443ad0192c, findElement {using=id, value=usernameTextField}]
-Nov 10, 2017 9:27:00 AM org.openqa.selenium.remote.RemoteWebDriver log
-INFO: Executed: [CLOUD-SID:2017-11-10_09-24-55-cda77cc4-24d5-4df4-a482-bf443ad0192c, findElement {using=id, value=usernameTextField}]
-Nov 10, 2017 9:27:00 AM org.openqa.selenium.remote.RemoteWebDriver log
-INFO: Executing: sendKeysToElement [CLOUD-SID:2017-11-10_09-24-55-cda77cc4-24d5-4df4-a482-bf443ad0192c, sendKeysToElement {id=11, value=[Ljava.lang.CharSequence;@305ffe9e}]
-Nov 10, 2017 9:27:01 AM org.openqa.selenium.remote.RemoteWebDriver log
-INFO: Executed: [CLOUD-SID:2017-11-10_09-24-55-cda77cc4-24d5-4df4-a482-bf443ad0192c, sendKeysToElement {id=11, value=[Ljava.lang.CharSequence;@305ffe9e}]
-Nov 10, 2017 9:27:01 AM org.openqa.selenium.remote.RemoteWebDriver log
-INFO: Executing: findElement [CLOUD-SID:2017-11-10_09-24-55-cda77cc4-24d5-4df4-a482-bf443ad0192c, findElement {using=id, value=passwordTextField}]
-Nov 10, 2017 9:27:04 AM org.openqa.selenium.remote.RemoteWebDriver log
-INFO: Executed: [CLOUD-SID:2017-11-10_09-24-55-cda77cc4-24d5-4df4-a482-bf443ad0192c, findElement {using=id, value=passwordTextField}]
-Nov 10, 2017 9:27:04 AM org.openqa.selenium.remote.RemoteWebDriver log
-INFO: Executing: sendKeysToElement [CLOUD-SID:2017-11-10_09-24-55-cda77cc4-24d5-4df4-a482-bf443ad0192c, sendKeysToElement {id=12, value=[Ljava.lang.CharSequence;@7ae0a9ec}]
-Nov 10, 2017 9:27:05 AM org.openqa.selenium.remote.RemoteWebDriver log
-INFO: Executed: [CLOUD-SID:2017-11-10_09-24-55-cda77cc4-24d5-4df4-a482-bf443ad0192c, sendKeysToElement {id=12, value=[Ljava.lang.CharSequence;@7ae0a9ec}]
-Nov 10, 2017 9:27:05 AM org.openqa.selenium.remote.RemoteWebDriver log
-INFO: Executing: findElement [CLOUD-SID:2017-11-10_09-24-55-cda77cc4-24d5-4df4-a482-bf443ad0192c, findElement {using=id, value=loginButton}]
-Nov 10, 2017 9:27:07 AM org.openqa.selenium.remote.RemoteWebDriver log
-INFO: Executed: [CLOUD-SID:2017-11-10_09-24-55-cda77cc4-24d5-4df4-a482-bf443ad0192c, findElement {using=id, value=loginButton}]
-Nov 10, 2017 9:27:07 AM org.openqa.selenium.remote.RemoteWebDriver log
-INFO: Executing: clickElement [CLOUD-SID:2017-11-10_09-24-55-cda77cc4-24d5-4df4-a482-bf443ad0192c, clickElement {id=13}]
-Nov 10, 2017 9:27:08 AM org.openqa.selenium.remote.RemoteWebDriver log
-INFO: Executed: [CLOUD-SID:2017-11-10_09-24-55-cda77cc4-24d5-4df4-a482-bf443ad0192c, clickElement {id=13}]
-Nov 10, 2017 9:27:08 AM org.openqa.selenium.remote.RemoteWebDriver log
-INFO: Executing: quit [CLOUD-SID:2017-11-10_09-24-55-cda77cc4-24d5-4df4-a482-bf443ad0192c, quit {}]
-Nov 10, 2017 9:27:13 AM org.openqa.selenium.remote.RemoteWebDriver log
-INFO: Executed: [CLOUD-SID:2017-11-10_09-24-55-cda77cc4-24d5-4df4-a482-bf443ad0192c, quit {}]
+  <system-err><![CDATA[Nov 10, 2017 9:25:51 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: findElement [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, findElement {using=xpath, value=//*[@accessibilityLabel='Username']}]
+Nov 10, 2017 9:25:53 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, findElement {using=xpath, value=//*[@accessibilityLabel='Username']}]
+Nov 10, 2017 9:25:53 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: sendKeysToElement [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, sendKeysToElement {id=11, value=[Ljava.lang.CharSequence;@6d60fe40}]
+Nov 10, 2017 9:25:56 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, sendKeysToElement {id=11, value=[Ljava.lang.CharSequence;@6d60fe40}]
+Nov 10, 2017 9:25:56 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: findElement [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, findElement {using=xpath, value=//*[@accessibilityLabel='Password']}]
+Nov 10, 2017 9:25:58 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, findElement {using=xpath, value=//*[@accessibilityLabel='Password']}]
+Nov 10, 2017 9:25:58 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: sendKeysToElement [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, sendKeysToElement {id=12, value=[Ljava.lang.CharSequence;@19932c16}]
+Nov 10, 2017 9:26:01 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, sendKeysToElement {id=12, value=[Ljava.lang.CharSequence;@19932c16}]
+Nov 10, 2017 9:26:01 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: findElement [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, findElement {using=xpath, value=xpath=//*[@text='Login']}]
+Nov 10, 2017 9:26:02 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, findElement {using=xpath, value=xpath=//*[@text='Login']}]
+Nov 10, 2017 9:26:02 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: clickElement [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, clickElement {id=13}]
+Nov 10, 2017 9:26:03 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, clickElement {id=13}]
+Nov 10, 2017 9:26:03 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: findElement [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, findElement {using=xpath, value=xpath=//*[@text='Make Payment']}]
+Nov 10, 2017 9:26:05 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, findElement {using=xpath, value=xpath=//*[@text='Make Payment']}]
+Nov 10, 2017 9:26:05 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: clickElement [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, clickElement {id=14}]
+Nov 10, 2017 9:26:06 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, clickElement {id=14}]
+Nov 10, 2017 9:26:06 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: findElement [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, findElement {using=xpath, value=xpath=//*[@text='Select']}]
+Nov 10, 2017 9:26:07 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, findElement {using=xpath, value=xpath=//*[@text='Select']}]
+Nov 10, 2017 9:26:07 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: clickElement [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, clickElement {id=15}]
+Nov 10, 2017 9:26:08 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, clickElement {id=15}]
+Nov 10, 2017 9:26:08 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: findElement [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, findElement {using=xpath, value=//*[@accessibilityLabel='USA']}]
+Nov 10, 2017 9:26:09 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, findElement {using=xpath, value=//*[@accessibilityLabel='USA']}]
+Nov 10, 2017 9:26:09 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: clickElement [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, clickElement {id=16}]
+Nov 10, 2017 9:26:10 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, clickElement {id=16}]
+Nov 10, 2017 9:26:10 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: findElement [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, findElement {using=xpath, value=xpath=//*[@accessibilityLabel='Cancel']}]
+Nov 10, 2017 9:26:11 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, findElement {using=xpath, value=xpath=//*[@accessibilityLabel='Cancel']}]
+Nov 10, 2017 9:26:11 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: clickElement [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, clickElement {id=17}]
+Nov 10, 2017 9:26:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, clickElement {id=17}]
+Nov 10, 2017 9:26:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: findElement [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, findElement {using=xpath, value=xpath=//*[@accessibilityLabel='Logout']}]
+Nov 10, 2017 9:26:13 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, findElement {using=xpath, value=xpath=//*[@accessibilityLabel='Logout']}]
+Nov 10, 2017 9:26:13 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: clickElement [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, clickElement {id=18}]
+Nov 10, 2017 9:26:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, clickElement {id=18}]
+Nov 10, 2017 9:26:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: get [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, get {url=http://www.wikipedia.org}]
+Nov 10, 2017 9:26:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, get {url=http://www.wikipedia.org}]
+Nov 10, 2017 9:26:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executing: quit [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, quit {}]
+Nov 10, 2017 9:26:34 AM org.openqa.selenium.remote.RemoteWebDriver log
+INFO: Executed: [CLOUD-SID:2017-11-10_09-24-56-bf9cd438-7fa5-4b11-8915-2c5e3fa0707d, quit {}]
 ]]></system-err>
 </testsuite>

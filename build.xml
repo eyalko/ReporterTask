@@ -41,6 +41,34 @@
 	            <test name="p1.testappium" />
 	        </junit>
 	    </target>
+	<target name="Test04">
+	    	<junit fork="true" printsummary="withOutAndErr" showoutput="true">
+	            <formatter type="xml" usefile="true" />
+	            <classpath refid="parallel.classpath" />
+	            <test name="p1.AppiumGridIOS" />
+	        </junit>
+	    </target>
+	<target name="Test05">
+	    	<junit fork="true" printsummary="withOutAndErr" showoutput="true">
+	            <formatter type="xml" usefile="true" />
+	            <classpath refid="parallel.classpath" />
+	            <test name="p1.AppiumGridIOS" />
+	        </junit>
+	    </target>
+	<target name="Test06">
+		    	<junit fork="true" printsummary="withOutAndErr" showoutput="true">
+		            <formatter type="xml" usefile="true" />
+		            <classpath refid="parallel.classpath" />
+		            <test name="p1.testappiumVersion" />
+		        </junit>
+		    </target>
+	<target name="Test07">
+		    	<junit fork="true" printsummary="withOutAndErr" showoutput="true">
+		            <formatter type="xml" usefile="true" />
+		            <classpath refid="parallel.classpath" />
+		            <test name="p1.testappiumVersion" />
+		        </junit>
+		    </target>
     <target name="Parallel exec" depends="compile">
         <parallel>
             <antcall target="Test01">
@@ -48,6 +76,14 @@
             <antcall target="Test02">
             </antcall>
         	<antcall target="Test03">
+        	 </antcall>
+        	<antcall target="Test04">
+        	 </antcall>
+        	<antcall target="Test05">
+        	 </antcall>
+        	<antcall target="Test06">
+        	 </antcall>
+        	<antcall target="Test07">
         	 </antcall>
         </parallel>
     </target>

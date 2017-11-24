@@ -35,7 +35,7 @@ public class AppiumGridIOS implements Runnable {
 		
 		
 		dc.setCapability("deviceQuery", deviceQuery);
-		dc.setCapability("stream", "Eyal Reporter");
+		dc.setCapability("stream", "Eyal Reporter Task 2");
 		dc.setCapability("build", 1);
 		
 		
